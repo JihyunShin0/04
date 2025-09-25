@@ -3,16 +3,12 @@
 
 int main(int argc, char *argv[])
 {
-    int a, b;
-    printf("input two integers >>> ");
-    scanf("%i %i", &a, &b);
+    int sec;
     
-    printf("+ result is %d\n", a+b);
-    printf("- result is %d\n", a-b);
-    printf("* result is %d\n", a*b);
-    printf("/ result is %d\n", a/b);
-    printf("%% result is %d\n", a%b);
-    printf("\n--------------------\n");
+    printf("input the second >>> ");
+    scanf("%d", &sec);
+    
+    printf("the time is %d : %d\n", sec/60, sec%60);
     
     system("PAUSE");	
     return 0;
