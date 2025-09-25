@@ -3,21 +3,15 @@
 
 int main(int argc, char *argv[])
 {
-    unsigned int x;
-    int b;
+    int sec;
     
-    printf("input a number >>> ");
-    scanf("%ui", &x);
+    printf("input the second >>> ");
+    scanf("%d", &sec);
     
-    for ( b = 0 ; x != 0 ; x >>= 1 )
-    {
-        if (x & 1) 
-        {
-           b++;
-        }    
-    }
+    printf("The time for %d second is %d : %d : %d\n", sec,
+    sec/3600, (sec%3600)/60, (sec%3600)%60);
     
-    printf("The result is : %i\n", b);
+    printf("\n--------------------\n");
     
     system("PAUSE");	
     return 0;
