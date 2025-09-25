@@ -3,12 +3,14 @@
 
 int main(int argc, char *argv[])
 {
-    int sec;
+    int year;
     
-    printf("input the second >>> ");
-    scanf("%d", &sec);
+    printf("input the year >>> ");
+    scanf("%d", &year);
     
-    printf("the time is %d : %d\n", sec/60, sec%60);
+    printf("is the year %d the leap year? >>> %d\n", year,
+    ((year%4==0 && year%100!=0) || year%400==0));
+    
     
     system("PAUSE");	
     return 0;
